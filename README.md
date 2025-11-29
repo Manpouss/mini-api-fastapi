@@ -1,7 +1,7 @@
 
 ---
 
-# 🟧 **3. README – `mini-api-fastapi`**
+# 🟧 **README – `mini-api-fastapi`**
 
 # ⚡ Mini API – FastAPI
 
