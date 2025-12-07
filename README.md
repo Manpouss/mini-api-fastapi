@@ -35,15 +35,16 @@ L’API expose un CRUD simple (ex : gestion de tâches / contacts / items).
 ```
 
 mini-api-fastapi/
-├── app/
-│ ├── main.py
-│ ├── models.py
-│ ├── schemas.py
-│ └── routes/
-│ └── items.py
-├── tests/
-├── requirements.txt
+│── app/
+│   ├── main.py          # Point d'entrée de l'API
+│   ├── models.py        # Modèles (si base de données)
+│   ├── schemas.py       # Schémas Pydantic
+│   └── routes/
+│       └── items.py     # Routes / Endpoints
+│── tests/               # (optionnel) Tests unitaires
+│── requirements.txt
 └── README.md
+
 
 ```
 
@@ -65,8 +66,9 @@ Une fois l’API lancée :
 ## 📈 Améliorations prévues
 
 - Ajout d’une base de données SQLite
-- Authentification simple
-- Dockerfile
+- Authentification simple (JWT ou OAuth2)
+- Ajout d’un Dockerfile pour déploiement rapide
+- Tests unitaires (pytest)
 
 ## 📬 Contact
 
