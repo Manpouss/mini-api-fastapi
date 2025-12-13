@@ -1,6 +1,6 @@
 # app/main.py
 from fastapi import FastAPI
-from app.routes import items
+from app.routes import tasks
 
 # On crée l'application FastAPI
 app = FastAPI(
@@ -10,7 +10,7 @@ app = FastAPI(
 )
 
 # On inclut les routes définies dans app/routes/items.py
-app.include_router(items.router)
+app.include_router(tasks.router)
 
 # Route de base pour vérifier que l'API fonctionne
 @app.get("/")
