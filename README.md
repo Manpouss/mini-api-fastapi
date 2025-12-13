@@ -73,15 +73,17 @@ Une fois l’API lancée :
 
 ## 🔌 Endpoints (CRUD)
 
-Base URL : http://localhost:8000
+Base URL : `http://localhost:8000`
 
-Méthode	Endpoint	Description
-GET	/tasks/	Liste toutes les tâches
-POST	/tasks/	Crée une tâche
-GET	/tasks/{task_id}	Récupère une tâche par ID
-PUT	/tasks/{task_id}	Met à jour une tâche par ID
-DELETE	/tasks/{task_id}	Supprime une tâche par ID
-DELETE	/tasks/	Supprime toutes les tâches
+| Méthode | Endpoint           | Description |
+|--------|---------------------|-------------|
+| GET    | `/tasks/`           | Liste toutes les tâches |
+| POST   | `/tasks/`           | Crée une tâche |
+| GET    | `/tasks/{task_id}`  | Récupère une tâche par ID |
+| PUT    | `/tasks/{task_id}`  | Met à jour une tâche par ID |
+| DELETE | `/tasks/{task_id}`  | Supprime une tâche par ID |
+| DELETE | `/tasks/`           | Supprime toutes les tâches |
+
 
 ## Exemple de création (POST /tasks/)
 ```json
