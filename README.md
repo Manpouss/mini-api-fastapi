@@ -1,5 +1,6 @@
 
 ---
+![CI](https://github.com/Manpouss/mini-api-fastapi/actions/workflows/ci.yml/badge.svg)
 
 # 🟧 **README – `mini-api-fastapi`**
 
@@ -109,10 +110,10 @@ Ce que ça vérifie :
 
 ## 📈 Améliorations prévues
 
+- CI GitHub Actions (lint + tests)
+- Dockerfile + docker-compose
 - Persistance SQLite (SQLAlchemy)
 - Authentification (JWT / OAuth2)
-- Dockerfile + docker-compose
-- CI GitHub Actions (lint + tests)
 - Déploiement (Render / Railway / Fly.io)
 
 ## 👤 À propos
