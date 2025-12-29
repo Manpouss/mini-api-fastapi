@@ -1,6 +1,6 @@
 
 ---
-![CI](https://github.com/Manpouss/mini-api-fastapi/actions/workflows/ci.yml/badge.svg)
+[![CI](https://github.com/Manpouss/mini-api-fastapi/actions/workflows/ci.yml/badge.svg)](https://github.com/Manpouss/mini-api-fastapi/actions/workflows/ci.yml)
 
 # 🟧 **README – `mini-api-fastapi`**
 
