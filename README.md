@@ -10,6 +10,12 @@ Une petite API REST construite avec **FastAPI** pour gérer des **tâches (ToDo)
 Objectif : montrer une API **propre**, **documentée**, **maintenable** et **testée** (CRUD + TU).
 
 ---
+## ✨ Features
+
+- REST API for task management (CRUD)
+- SQLite persistence using SQLModel
+- Clean project structure (routes / models / db)
+- Automatic API documentation with Swagger UI *(work in progress)*
 
 ## 🚀 Objectifs
 
@@ -28,6 +34,7 @@ Objectif : montrer une API **propre**, **documentée**, **maintenable** et **tes
 - Pydantic
 - Uvicorn
 - Pytest (+ httpx pour TestClient)
+- SQLModel (SQLite)
 
 ---
 
@@ -40,6 +47,7 @@ mini-api-fastapi/
 │   ├── main.py              # Point d'entrée FastAPI
 │   ├── schemas.py           # Schémas Pydantic (contrats API)
 │   ├── models.py            # Réservé aux modèles DB (plus tard)
+│   ├── db.py        
 │   └── routes/
 │       └── tasks.py         # Endpoints /tasks (CRUD)
 ├── tests/
@@ -47,8 +55,8 @@ mini-api-fastapi/
 │   └── test_tasks.py        # Tests des endpoints /tasks
 ├── requirements.txt
 └── README.md
-
-
+└── CHANGELOG.md
+└── app.db
 ```
 
 ---
@@ -62,15 +70,15 @@ python -m venv .venv
 .venv\Scripts\activate
 # Linux/macOS
 # source .venv/bin/activate
-
 pip install -r requirements.txt
+uvicorn app.main:app --reload
 
 ```
 ## 📚 Documentation automatique
 
 Une fois l’API lancée :
-- Swagger : http://localhost:8000/docs
-- ReDoc : http://localhost:8000/redoc
+- Swagger : http://localhost:8000/tasks
+- ReDoc : http://localhost:8000/tasks
 
 ## 🔌 Endpoints (CRUD)
 
