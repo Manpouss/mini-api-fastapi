@@ -110,8 +110,8 @@ Ce que ça vérifie :
 
 ## 📈 Améliorations prévues
 
-- CI GitHub Actions (lint + tests)
-- Dockerfile + docker-compose
+- CI GitHub Actions (lint + tests)  DONE
+- Dockerfile + docker-compose         
 - Persistance SQLite (SQLAlchemy)
 - Authentification (JWT / OAuth2)
 - Déploiement (Render / Railway / Fly.io)
